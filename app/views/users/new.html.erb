@@ -1,0 +1,18 @@
+<h1>Register</h1>
+
+<div class="row">
+ <div class="holder">
+<% form_for(@user) do |f| %>
+  <%= f.label :login %><br />
+  <%= f.text_field :login %><br />
+  <br />
+  <%= f.label :password %><br />
+  <%= f.password_field :password %><br />
+  <br />
+  <%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation %><br /> 
+  <%= f.submit "Register" %>
+<% end %>
+<p>what?</p>
+</div>
+</div>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FellowTrainingManual</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <header>
+    <div id="header_wrapper">
+      <!---fill in the source image files src="#"-->
+      <h1 id="cgf_logo"><img src="#" width="280px" height="190px"/>
+      <ul id="breadcrumb_nav">
+        <%= yield :head %>
+      </ul>
+      <ul id="top_nav">
+        <li id="settings_nav"><%= link_to "settings", '#' %></li>
+        <li id="logout_nav"><a href="#" class="logout">Logout</a></li>
+      </ul>
+    </div>
+  </header>
+  <body>
+    <%= yield %>
+  </body>
+  <footer>
+    <div id="footer_nav">
+      <div id="footer_nav_wrapper">
+        <ul>
+          <!-- fill in the source pages in href="#"-->
+          <li><%= link_to "Home", root_path %> </li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</html>

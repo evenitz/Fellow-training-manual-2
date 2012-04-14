@@ -1,0 +1,11 @@
+<% content_for :head do %>
+  <li id="library_nav"><a href="#" class="library">Library</a></li> > 
+  <li id="pre-training_nav"><a href="#" class="pre-training">Pre-training</a></li> >
+  <li id="poverty_nav"><a href="#" class="poverty">Poverty</a></li> 
+  > What does it mean to live in poverty?
+<% end %>
+
+<div id="top_container">
+  <h2><%= @page.name %></h2>
+  <%= raw @page.html %>
+</div>

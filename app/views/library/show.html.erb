@@ -1,0 +1,23 @@
+<% content_for :head do %>
+  <li id="library_nav"><a href="#" class="library">Library</a></li>
+<% end %>
+
+<div id="top_contrainer">
+  <h2>Library</h2>
+  <div class="library_section">
+    <div class="sections">
+      <%= render(@sections) || 'No sections have been created yet' %>
+    </div>
+  </div>
+  <div class=chapter_progress>
+    <div class="pre-training_section">
+      <h4>0/4 Chapters</h4>
+    </div>
+    <div class="training_section">
+      <h4>0/4 Chapters</h4>
+    </div>
+    <div class="post-training_section">
+      <h4>0/4 Chapters</h4>
+    </div>
+  </div>
+</div>

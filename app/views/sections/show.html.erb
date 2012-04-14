@@ -1,0 +1,29 @@
+<% content_for :header do %>
+  <li id="library_nav"><a href="#" class="library">Library</a></li>  Pre-training
+<% end %>
+
+<div id="top_container">
+  <h2><%= @section.name %>
+  <p><a href="<%=params[:id]%>/topics/new" class="link1">New Topic</a></p>
+  <div class="topics">
+    <%= render @topics %>
+  </div>
+
+  <div class=chapter_progress>
+    <div class="econ_struc_topic">
+      <h4>0/4 Chapters</h4>
+    </div>
+    <div class="poverty_topic">
+      <h4>0/7 Chapters</h4>
+    </div>
+    <div class="microfinance_topic">
+      <h4>0/7 Chapters</h4>
+    </div>
+    <div class="cgf_topic">
+      <h4>0/7 Chapters</h4>
+    </div>
+  </div>
+
+</div>
+
+

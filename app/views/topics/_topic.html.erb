@@ -1,0 +1,6 @@
+<div class="topic">
+  <h3><% topic.name %></h3>
+  <p> <%= topic.description %> </p>
+  <p> <%= pluralize(topic.pages.all.count, "page") %></p>
+  <p> <%= link_to topic.name, topic %></p>
+</div>

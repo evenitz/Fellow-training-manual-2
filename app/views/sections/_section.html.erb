@@ -1,0 +1,7 @@
+<div class= "training_section">
+  <h3><%= section.name %> </h3>
+  <p><%= section.description %></p>
+  <p><%= section.name %> </p>
+  <p> <%= pluralize(section.topics.all.count, "chapter") %> </p>
+  <p> <%= link_to section.name, section %> </p>
+</div>

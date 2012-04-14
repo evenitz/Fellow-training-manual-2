@@ -1,0 +1,13 @@
+<% content_for :head do %>
+  <li id="library_nav"><a href="#" class="library">Library</a></li> > 
+                <li id="pre-training_nav"><a href="#" class="pre-training">Pre-training</a></li>
+                > Poverty
+<% end %>
+
+<div id="top_container">
+  <h2> <%= @topic.name %> </h2>
+  <p><a href="<%=params[:id]%>/pages/new" class="link1">New Page</a></p>
+  <div class="pages">
+    <%= render @pages %>
+  </div>
+</div>
